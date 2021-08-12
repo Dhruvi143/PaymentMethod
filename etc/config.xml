@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--
+/**
+*
+*  config.xml  to set values
+*
+**/
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <cash>
+                <active>1</active>
+                <model>Codilar\PaymentMethod\Model\Gateways\Cash</model>
+                <order_status>pending</order_status>
+                <title>Cash</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+            </cash>
+            <prepaid>
+                <active>1</active>
+                <model>Codilar\PaymentMethod\Model\Gateways\Prepaid</model>
+                <order_status>pending</order_status>
+                <title>Prepaid</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+            </prepaid>
+            <custompayment>
+                <active>1</active>
+                <model>Codilar\PaymentMethod\Model\Gateways\CustomPayment</model>
+                <order_status>pending</order_status>
+                <title>Custom Payment</title>
+                <allowspecific>0</allowspecific>
+                <group>offline</group>
+            </custompayment>
+        </payment>
+    </default>
+</config>
