@@ -1,0 +1,2 @@
+# PaymentMethod
+Offline payment method
